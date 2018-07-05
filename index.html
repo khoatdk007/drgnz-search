@@ -11,22 +11,25 @@
     <form method="get" action="https://www.google.com/search" name="search">
     <center>
         <div id="header">
-            <h1 style="font-family: Google, sans-serif; color: #00ffff;">Drgnz</h1>
+            <h1 style="font-family: Google, sans-serif; color: #00ffff;">drgnz</h1>
         </div>
         <div class="form">
             <input type="text" id="form-search" name="q" placeholder="Type here to search with Drgnz">
         </div>  
         <div class="buttons">
             <input type="submit" value="Drgnz Search" onclick="document.forms['search'].action = 'https://google.com/search'">
-            <input type="submit" value="Search on Daynhauhoc" onclick="document.forms['search'].action = 'https://daynhauhoc.com/search'">
+            <input type="submit" value="Search on DayNhauHoc.com" onclick="document.forms['search'].action = 'https://daynhauhoc.com/search'">
         </div>
         <div class="otherbtns">
-            <span style="color:white;">Other : </span>
+            <span style="font-size: 14px; color:white;">also search as... </span>
+            <input type="submit" value="Images" onclick="{
+                document.forms['search'].action = 'http://www.google.com/images';
+            }"/>
             <input type="submit" value="Movies" onclick="{
                 
             }"/>
             <input type="submit" value="Songs" />
-            <input type="submit" value="Youtube" onclick="{
+            <input type="submit" value="YouTube" onclick="{
                 document.forms['search'].action = 'https://www.youtube.com/results';
                 document.getElementById('form-search').name='search_query';
             }"/>
@@ -34,6 +37,10 @@
                 document.forms['search']['q'].value += ' PDF';
                 document.forms['search'].action = 'https://google.com/search';
             }"/>
+        </div>
+        <div class="footer">
+            <span id="copyright">©2018 khoatdk007@DayNhauHoc.com</span>
+            <a id="fork" href="https://github.com/khoatdk007/drgnzsearch/">Fork me!</a>
         </div>
     </center>
     </form>
