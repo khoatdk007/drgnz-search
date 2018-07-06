@@ -29,19 +29,13 @@ body {
     font-family: Roboto;
     src: url('font/roboto.ttf');
 }
-<<<<<<< HEAD
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 45px;
-    color: #00ffff;
-=======
+
 
 .header {
     position: absolute;
     right: 20px;
     top: 10px;
     padding: 5px 0;
->>>>>>> 420f22e1a32457be03cd7b6f1cc921a0a50c109b
 }
 
 .header #lang {
@@ -104,7 +98,7 @@ input[type="text"] {
     position: absolute;
     width: 100%;
     /* padding: 45px 0px; */
-    padding-top: 45px;
+    padding-top: 80px;
 }
 
 .try-btns input[type="submit"], .search-as-btns input[type="submit"] {
