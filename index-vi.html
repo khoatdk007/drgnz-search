@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Drgnz search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link media="screen" rel="stylesheet" href="style.css"/>
+    <link media="screen" rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/favicon.png">
 </head>
 <body>
@@ -17,25 +17,26 @@
     <form method="get" action="https://www.google.com/search" name="search">
     <center>
         <div id="logo">
-            <h1>drgnz</h1>
+            <h1 style="font-family: Google, sans-serif; color: white; text-shadow: 0px 0px 0.75em #00ffff, 0 0 0.5em #00ffff, 0 0 0.25em white;">drgnz</h1>
+            <!-- Thanks to Cnullhu and Rerosu -->
         </div>
         <div class="form">
-            <input type="text" id="form-search" name="q" placeholder="Type here to search with Drgnz">
+            <input type="text" id="form-search" name="q" placeholder="Gõ vào đây để tìm với Drgnz nào <(&quot)">
         </div>  
         <div class="buttons">
-            <input type="submit" value="Drgnz Search" onclick="document.forms['search'].action = 'https://google.com/search'">
-            <input type="submit" value="Search on DayNhauHoc.com" onclick="document.forms['search'].action = 'https://daynhauhoc.com/search'">
+            <input type="submit" value="Tìm với Drgnz" onclick="document.forms['search'].action = 'https://google.com/search'">
+            <input type="submit" value="Tìm trên DayNhauHoc.com" onclick="document.forms['search'].action = 'https://daynhauhoc.com/search'">
         </div>
         <div class="otherbtns">
             <div class="search-as-btns">
-                <span style="font-size: 14px; color: white;">also search as... </span>
-                <input type="submit" value="Images" onclick="{
+                <span style="font-size: 14px; color: white;">tìm kiếm theo... </span>
+                <input type="submit" value="Hình ảnh" onclick="{
                     document.forms['search'].action = 'http://www.google.com/images';
                 }"/>
-                <input type="submit" value="Movies" onclick="{
+                <input type="submit" value="Phim" onclick="{
                     
                 }"/>
-                <input type="submit" value="Songs" />
+                <input type="submit" value="Nhạc" />
                 <input type="submit" value="YouTube" onclick="{
                     document.forms['search'].action = 'https://www.youtube.com/results';
                     document.getElementById('form-search').name='search_query';
@@ -46,7 +47,7 @@
                 }"/>
             </div>
             <div class="try-btns">
-                <span style="font-size: 14px; color: white;">let's try... </span>
+                <span style="font-size: 14px; color: white;">hãy thử... </span>
                 <input type="submit" value="Solving Math" onclick="{
                     document.forms['search'].action = 'https://www.wolframalpha.com/input';
                     document.getElementById('form-search').name='i';
@@ -61,4 +62,3 @@
     </form>
 </body>
 </html>
-
